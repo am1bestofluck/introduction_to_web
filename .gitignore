@@ -1,5 +1,7 @@
 *.*
 !.gitignore
 !*.txt
+!*.css
+!*.html
 !*.jpg
 !*.MD
