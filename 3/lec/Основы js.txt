@@ -1,0 +1,154 @@
+Основы js
+
+Язык динамический
+Основная идея JS - ошибки - это проблема языка :)). Не получилось - работай дальше.
+
+> как начать
+	<script language = "JavaScript">
+		alert ("Hello World!");
+	</script>
+
+	<script language = "JavaScript">
+	//f-string
+		let name= "Antoha"
+		alert('Hello, ${name}!'); // Hello, Antoha!
+
+	//calc
+	alert ('2+2 = {2+2}'); // 2+2 = 4 
+	</script>
+
+	> no brackets??
+		typeof undefined 	//undefined
+		typeof 0			//number
+		typeof true			//boolean
+		typeof "foo"		//string
+
+
+	interactions:
+		alert("must answer!"); //не отстанет до "ок"
+
+		let must_answer = prompt("Say My Name!"); //returns string
+
+		let right = confirm("Погода класс?"); //accept bool y/n
+
+	> basic stuff
+		+ addition
+		- substraction
+		/ division
+		** pow
+		% mod
+
+	> str to int
+		parseInt("str");
+		let number = parseInt(prompt("Input number?")); alert (number+1);
+
+	> "+" может быть унарным оператором, перевести переменную в число? 
+
+	|| OR
+	&& AND
+	! NOT
+
+	alert (true || true) //true
+	alert( !0) //true
+	alert (true && false) //false
+
+
+	x = y // x = y
+	x += y // x = x + y
+	x -= y // x = x - y
+	so on.. for *= /= %=
+	++ == +1
+	-- == -1
+	=== тип и значение равны
+
+	фунцкцию можно писать где угодно в тексте!
+
+> типы данных js
+	//комментарий
+
+	let message = "hello";
+	message = 123456;
+
+	let n = 123456; // все числа идут под одним типом number
+	n = 123.456;
+
+	Infinity - мат. бесконечность;
+	NaN - "не число", тип вывода при ошибке
+
+	Boolean - true; false. 
+	0, -0, null, false, NaN, undefined, '' и необъявленое явно значение приравниваются к False
+
+	значение null;
+	декларируем без значения.
+	let age = null;
+
+	значение "undefined"
+	let age;
+	alert(age); // выведет "undefined"
+
+
+> условный оператор
+	
+	if (cond) {
+	op1;
+	op2;
+	}
+
+	if (year == 2022)
+	{
+	alert( "...no way.");
+	alert("!");
+	}
+	else {
+	alert("check if current year, later");
+	}
+
+	сахар if else:
+		let accessAllowed = (age >18) ? true: false;
+
+> циклы
+
+	//цикл while
+	let i = 0;
+	while ( i<3) {
+	alert(i);
+	i++;
+	} // тормозит после 2
+
+	//цикл do while
+	let i = 0; //
+	do {
+	alert (i);
+	i++;
+	} while (i < 3); // тормозит после 2
+
+	//цикл for
+	for (let i = 0; i < 3; i++) {
+	alert(i); //тормозит после 2
+	}
+
+	//switch - match, для известных вариантов
+	switch (a) {
+	case 3:
+		alert('2small');
+		break;// !!!!!
+	case 4:
+		alert('ok!');
+		break; //!!!!
+	case 5:
+		alert('2big');
+		break;
+	default:
+		alert('not even close');
+		break;
+	} 
+
+> функции
+	
+	function showMessage()
+	{
+		alert('Всё будет хорошо!');
+	}
+	showMessage();
+	showMessage();
+
