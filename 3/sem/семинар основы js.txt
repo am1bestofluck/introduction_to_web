@@ -39,3 +39,21 @@ console.log("this will be echoed to console!");
 
 переменные объявляемые внутри функций - собираются сборщиком когда функция  
 возвращает результат.
+
+чтобы в switch case обрабатывать несколько кейсов одним выводом нужно
+группировать кейсы по выводам, записывая операторы и break только в после-
+дний из них, а кейсы с тем же выводом оставлять пустыми после двоеточия.
+	пример: 
+	const q = 1;
+	switch (q){
+		case 2:
+			console.log(`even!`);
+		case 4:
+			console.log(`even!`);
+		case 1:
+		case 3:
+		case 5:
+			console.log('odd!');
+		default:
+			console.log('not implemented!');
+	}
