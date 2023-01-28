@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Как дела?!</p>
+    <script lang="JavaScript">
+        function showMessage()
+        {
+            alert('Всё будет хорошо!');
+        }
+        showMessage();
+        showMessage();
+        let name = prompt("What's your name?");
+        alert (`Привет, ${name}! Покорми кота?`);
+        let numb = parseInt(prompt("Сколько раз кормил?"));
+        alert(`Маладеесь! Сегодня и завтра получится ${sum_(numb,numb)} раз!`+
+        ' Строки склеиваются плюсом; переносится легко! '+
+        ' Функция может быть вызвана выше её декларации');
+
+        alert (`${numb+1}ой раз покорми!`);
+        switch (numb)
+        {
+            case 3:
+                alert('low');
+                break;
+            case 4:
+                alert('ok!');
+                break;
+            case 5:
+                alert('much');
+                break;
+            default:
+                alert('why');
+        }
+        let i = 0;
+        while ( i<numb) {
+            alert(i);
+            i++;
+            }
+        alert("завтра столько же раз!");
+        i = 0; //
+        do {
+        alert (i);
+        i++;
+        } while (i < 3);
+        function sum_(a,b)
+        {
+            return a+b; //4zh oO
+        }
+    </script>
+</body>
+</html>
