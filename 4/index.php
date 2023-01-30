@@ -118,7 +118,8 @@ $expertise = [
         <?php for ($i = 0; $i < 3; $i++) {?>
         <div class="w3-container">
           <h5 class="w3-opacity"><b><?=$expertise[$i]['proof'] == NULL? $expertise[$i]['obj'] : join(' / ', [$expertise[$i]['obj'],$expertise[$i]['proof']]) ?> </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=ucwords($expertise[$i]['start'])?> - <span class="w3-tag w3-teal w3-round"><?=ucwords($expertise[$i]['till'])?></span></h6>
+          <?php ucwords($expertise[$i]['till']) == 'Current' ? $myfg_styling = '"w3-tag w3-teal w3-round"':$myfg_styling ='' ?>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?=ucwords($expertise[$i]['start'])?> - <span class=<?= $myfg_styling?>><?=ucwords($expertise[$i]['till'])?></span></h6>
           <p><?=$expertise[$i]['short_note']?></p>
           <hr>
           </div>
